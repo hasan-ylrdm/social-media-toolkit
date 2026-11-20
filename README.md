@@ -2,7 +2,7 @@
 
 
 
-Werkzeug, mit dem ich die Social-Media-Kanäle kleiner lokaler Betriebe betreue (Instagram, Facebook, optional TikTok und Google-Unternehmensprofil): Strategie, Monatsplan, Post-Grafiken als PNG, Freigabe- und Monatsberichte als PDF. Kunden lassen sich direkt aus dem [Website-Baukasten](https://github.com/haso-yld/website-baukasten) übernehmen. Läuft komplett im Browser – kein Server, keine Installation, keine Fremd-Bibliotheken.
+Werkzeug, mit dem ich die Social-Media-Kanäle kleiner lokaler Betriebe betreue (Instagram, Facebook, optional TikTok und Google-Unternehmensprofil): Strategie, Monatsplan, Post-Grafiken als PNG, Freigabe- und Monatsberichte als PDF. Kunden lassen sich direkt aus dem [Website-Baukasten](https://github.com/hasan-ylrdm/website-baukasten) übernehmen. Läuft komplett im Browser – kein Server, keine Installation, keine Fremd-Bibliotheken.
 
 **Technik:** HTML, CSS und JavaScript · Grafiken mit Canvas · Speicherung in IndexedDB · 52 automatische Tests (`test.html`)
 
