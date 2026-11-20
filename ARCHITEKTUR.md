@@ -23,7 +23,7 @@ Stand: Version 1.0.1, Datenformat 1
 | `CLAUDE.md` | Regeln für eine KI, die weiterbaut. |
 | `WEITERENTWICKLUNG.md` | Schritt-für-Schritt-Anleitungen, Ideen, bekannte Grenzen. |
 | `CHANGELOG.md` | Was wann gebaut wurde. |
-| `UEBERGABE-PROMPT.md` | Fertiger Text für die Übergabe an Claude Opus. |
+
 
 ### `js/ladeliste.js`
 
