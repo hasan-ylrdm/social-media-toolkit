@@ -1,8 +1,14 @@
 # Social-Media-Betreuungs-Toolkit
 
-Version 1.0.1 · Datenformat 1
 
-Ein Werkzeug für mich allein: Damit betreue ich die Social-Media-Kanäle (Instagram, Facebook, optional TikTok und Google-Unternehmensprofil) kleiner lokaler Betriebe. Es läuft komplett im Browser, ohne Server, ohne Installation, ohne Internet.
+
+Werkzeug, mit dem ich die Social-Media-Kanäle kleiner lokaler Betriebe betreue (Instagram, Facebook, optional TikTok und Google-Unternehmensprofil): Strategie, Monatsplan, Post-Grafiken als PNG, Freigabe- und Monatsberichte als PDF. Kunden lassen sich direkt aus dem [Website-Baukasten](https://github.com/haso-yld/website-baukasten) übernehmen. Läuft komplett im Browser – kein Server, keine Installation, keine Fremd-Bibliotheken.
+
+**Technik:** HTML, CSS und JavaScript · Grafiken mit Canvas · Speicherung in IndexedDB · 52 automatische Tests (`test.html`)
+
+*Entwickelt mit Unterstützung von Claude (KI). Idee, Anforderungen und der Einsatz bei echten Kunden stammen von mir.*
+
+Version 1.0.1 · Datenformat 1
 
 ## Starten
 
