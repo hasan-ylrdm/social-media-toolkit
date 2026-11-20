@@ -1,0 +1,101 @@
+/* =====================================================================
+   toolkit-teile.css – allgemeine Bauteile
+   Buttons · Felder · Hinweise · Gruppen · Listen · Fotos · Dialoge
+   (bewusst gleich aufgebaut wie im Website-Baukasten, dort "ed-")
+   Farben und Maße kommen aus den Variablen in toolkit.css.
+   ===================================================================== */
+
+/* ---------- Buttons ---------- */
+.sm-knopf {
+  font: inherit; font-weight: 600; cursor: pointer; display: inline-flex;
+  align-items: center; justify-content: center; gap: 6px;
+  padding: 7px 12px; min-height: 34px; border-radius: 6px;
+  border: 1px solid var(--sm-linie); background: var(--sm-weiss); color: var(--sm-text);
+}
+.sm-knopf:hover { background: var(--sm-flaeche); }
+.sm-knopf:disabled { opacity: .5; cursor: not-allowed; }
+.sm-knopf-haupt { background: var(--sm-akzent); border-color: var(--sm-akzent); color: #fff; }
+.sm-knopf-haupt:hover { background: var(--sm-akzent-dunkel); }
+.sm-knopf-zweit { background: var(--sm-akzent-hell); border-color: #c9cffa; color: var(--sm-akzent-dunkel); }
+.sm-knopf-zweit:hover { background: #dfe3fb; }
+.sm-knopf-hell { background: rgba(255, 255, 255, .12); border-color: rgba(255, 255, 255, .3); color: #fff; }
+.sm-knopf-hell:hover { background: rgba(255, 255, 255, .22); }
+.sm-knopf-leise { border-color: transparent; background: none; }
+.sm-knopf-mini { padding: 3px 7px; min-height: 28px; min-width: 28px; font-size: 13px; }
+.sm-knopf-gefahr { color: var(--sm-gefahr); }
+.sm-knopf-gefahr:hover { background: #fdecea; }
+.sm-knopf-ki { background: #f3f0ff; border-color: #d6ccff; color: #4c2fb0; }
+.sm-knopf-umschalter[aria-pressed="true"] { background: var(--sm-akzent); border-color: var(--sm-akzent); color: #fff; }
+.sm-link { font: inherit; background: none; border: 0; padding: 0; color: var(--sm-akzent); cursor: pointer; text-decoration: underline; }
+.sm-knopfreihe { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+
+/* ---------- Felder ---------- */
+.sm-feld { display: grid; gap: 4px; margin-bottom: 12px; }
+.sm-feld label { font-weight: 600; font-size: 13px; }
+.sm-feld-schmal { max-width: 140px; }
+input[type="text"], input[type="email"], input[type="tel"], input[type="url"],
+input[type="password"], input[type="time"], input[type="date"], input[type="month"],
+input[type="number"], select, textarea {
+  font: inherit; color: var(--sm-text); background: #fff; width: 100%;
+  border: 1px solid #b9bfcb; border-radius: 6px; padding: 7px 9px;
+}
+textarea { resize: vertical; min-height: 34px; }
+.sm-hilfe, .sm-zaehler { color: var(--sm-leise); font-size: 12px; }
+.sm-zu-lang { color: var(--sm-gefahr); font-weight: 700; }
+.sm-schalter { display: flex; align-items: center; gap: 8px; }
+.sm-schalter input { width: 17px; height: 17px; flex: none; }
+.sm-schalter label { font-weight: 500; }
+
+.sm-hinweis {
+  margin: 0 0 12px; padding: 9px 11px; border-radius: 6px; font-size: 13px;
+  background: var(--sm-akzent-hell); border-left: 4px solid var(--sm-akzent);
+}
+.sm-hinweis-warnung { background: #fff5e0; border-left-color: #d98a00; }
+.sm-leer { color: var(--sm-leise); font-style: italic; margin: 6px 0 10px; }
+
+/* ---------- Aufklappbare Gruppen ---------- */
+.sm-gruppe { border: 1px solid var(--sm-linie); border-radius: var(--sm-radius); margin-bottom: 10px; background: #fff; }
+.sm-gruppe > summary { cursor: pointer; font-weight: 700; padding: 10px 12px; font-size: 14px; }
+.sm-gruppe[open] > summary { border-bottom: 1px solid var(--sm-linie); background: var(--sm-flaeche); border-radius: var(--sm-radius) var(--sm-radius) 0 0; }
+.sm-gruppe-inhalt { padding: 12px; }
+
+/* ---------- Listen und Einträge ---------- */
+.sm-liste { margin-bottom: 12px; }
+.sm-liste-titel { font-weight: 700; font-size: 13px; margin: 10px 0 6px; }
+.sm-eintrag { border: 1px solid var(--sm-linie); border-radius: 6px; margin-bottom: 6px; background: #fff; }
+.sm-eintrag > summary { display: flex; align-items: center; gap: 6px; padding: 6px 8px; cursor: pointer; list-style: none; }
+.sm-eintrag > summary::-webkit-details-marker { display: none; }
+.sm-eintrag > summary::before { content: "▸"; color: var(--sm-leise); width: 12px; flex: none; }
+.sm-eintrag[open] > summary::before { content: "▾"; }
+.sm-eintrag[open] > summary { border-bottom: 1px solid var(--sm-linie); background: var(--sm-flaeche); }
+.sm-eintrag-titel { flex: 1; min-width: 0; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sm-eintrag-titel small { font-weight: 400; color: var(--sm-leise); }
+.sm-eintrag-knoepfe { display: flex; gap: 3px; flex: none; }
+.sm-eintrag-inhalt { padding: 10px; }
+.sm-griff { cursor: grab; color: var(--sm-leise); font-size: 16px; padding: 0 2px; user-select: none; }
+.sm-ausgeblendet { opacity: .55; }
+.sm-ziel { outline: 3px dashed var(--sm-akzent); outline-offset: 1px; }
+
+/* ---------- Fotos ---------- */
+.sm-ablage { cursor: pointer; flex: 1; font-weight: 600; border: 2px dashed #a9b0bf; border-radius: var(--sm-radius); padding: 18px; text-align: center;
+  display: grid; gap: 8px; justify-items: center; margin-bottom: 12px; background: #fafbfc; }
+.sm-ablage p { margin: 0; font-weight: 700; }
+.sm-ablage small { color: var(--sm-leise); }
+.sm-ablage-aktiv { border-color: var(--sm-akzent); background: var(--sm-akzent-hell); }
+.sm-foto { display: grid; grid-template-columns: 110px 1fr; gap: 10px; border: 1px solid var(--sm-linie);
+  border-radius: var(--sm-radius); padding: 10px; margin-bottom: 10px; background: #fff; }
+.sm-foto img { width: 110px; height: 110px; object-fit: cover; border-radius: 6px; background: #eee; }
+.sm-foto-daten { min-width: 0; }
+.sm-foto-info { margin: 0 0 8px; font-size: 12px; color: var(--sm-leise); }
+
+/* ---------- Dialoge ---------- */
+.sm-dialog { border: 0; border-radius: 12px; padding: 0; width: min(640px, 94vw); max-height: 90vh;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .35); color: var(--sm-text); }
+.sm-dialog-breit { width: min(820px, 94vw); }
+.sm-dialog::backdrop { background: rgba(15, 20, 35, .55); }
+.sm-dialog-kopf { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px;
+  border-bottom: 1px solid var(--sm-linie); position: sticky; top: 0; background: #fff; z-index: 1; }
+.sm-dialog-kopf h2 { margin: 0; font-size: 17px; }
+.sm-dialog-inhalt { padding: 16px; }
+.sm-dialog h3 { font-size: 14px; margin: 14px 0 8px; }
+.sm-dialog h3:first-child { margin-top: 0; }

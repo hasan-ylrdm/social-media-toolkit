@@ -1,0 +1,431 @@
+{
+ "art": "website-baukasten-projekt",
+ "formatVersion": 1,
+ "werkzeugVersion": "1.0.1",
+ "exportiertAm": "2026-11-13T12:49:31.890Z",
+ "projekt": {
+  "formatVersion": 1,
+  "id": "projekt-beispiel-salon-musterfrau",
+  "name": "Salon Musterfrau (Beispiel)",
+  "erstelltAm": "2026-11-13T12:49:31.889Z",
+  "geaendertAm": "2026-11-13T12:49:31.889Z",
+  "betrieb": {
+   "firmenname": "Salon Musterfrau",
+   "slogan": "Ihr Friseur in Hallein",
+   "branche": "friseur",
+   "beschreibung": "Kleiner Damen- und Herrensalon in der Halleiner Altstadt. Schwerpunkt Farbe und Balayage.",
+   "strasse": "Musterstraße 1",
+   "plz": "5400",
+   "ort": "Hallein",
+   "land": "Österreich",
+   "telefon": "+43 6245 000000",
+   "email": "office@salon-musterfrau.example",
+   "terminLink": "https://termin.example/salon-musterfrau"
+  },
+  "oeffnungszeiten": {
+   "hinweis": "Termine am Abend nach Vereinbarung.",
+   "tage": [
+    {
+     "tag": "Montag",
+     "geschlossen": true,
+     "von": "08:30",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "tag": "Dienstag",
+     "geschlossen": false,
+     "von": "08:30",
+     "bis": "18:00",
+     "pause": true,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "tag": "Mittwoch",
+     "geschlossen": false,
+     "von": "08:30",
+     "bis": "18:00",
+     "pause": true,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "tag": "Donnerstag",
+     "geschlossen": false,
+     "von": "08:30",
+     "bis": "20:00",
+     "pause": true,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "tag": "Freitag",
+     "geschlossen": false,
+     "von": "08:30",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "tag": "Samstag",
+     "geschlossen": false,
+     "von": "08:00",
+     "bis": "13:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "tag": "Sonntag",
+     "geschlossen": true,
+     "von": "08:00",
+     "bis": "12:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    }
+   ]
+  },
+  "leistungen": [
+   {
+    "id": "leistung-1",
+    "name": "Damen: Waschen, Schneiden, Föhnen",
+    "beschreibung": "Inklusive Beratung und Styling.",
+    "preis": "ab € 52",
+    "bildId": ""
+   },
+   {
+    "id": "leistung-2",
+    "name": "Herren: Waschen und Schneiden",
+    "beschreibung": "Klassisch oder modern, mit Konturen.",
+    "preis": "€ 29",
+    "bildId": ""
+   },
+   {
+    "id": "leistung-3",
+    "name": "Farbe / Ansatz",
+    "beschreibung": "Schonende Coloration, abgestimmt auf Ihren Typ.",
+    "preis": "ab € 48",
+    "bildId": ""
+   },
+   {
+    "id": "leistung-4",
+    "name": "Balayage",
+    "beschreibung": "Natürliche Farbverläufe, freihändig gesetzt.",
+    "preis": "ab € 120",
+    "bildId": ""
+   },
+   {
+    "id": "leistung-5",
+    "name": "Kinderhaarschnitt",
+    "beschreibung": "Bis 12 Jahre.",
+    "preis": "€ 18",
+    "bildId": ""
+   }
+  ],
+  "team": [
+   {
+    "id": "team-1",
+    "name": "Maria Musterfrau",
+    "rolle": "Inhaberin, Friseurmeisterin",
+    "text": "Spezialistin für Farbe und Balayage.",
+    "bildId": "bild-team-1"
+   },
+   {
+    "id": "team-2",
+    "name": "Lena Beispiel",
+    "rolle": "Stylistin",
+    "text": "Liebt Kurzhaarschnitte und Hochsteckfrisuren.",
+    "bildId": "bild-team-2"
+   },
+   {
+    "id": "team-3",
+    "name": "Jonas Muster",
+    "rolle": "Lehrling im 2. Lehrjahr",
+    "text": "Unser Nachwuchs am Herrenstuhl.",
+    "bildId": ""
+   }
+  ],
+  "bewertungen": [
+   {
+    "id": "bewertung-1",
+    "name": "Sabine K.",
+    "text": "Endlich ein Salon, in dem man sich Zeit nimmt. Die Beratung war ehrlich und das Ergebnis genau so, wie ich es wollte.",
+    "sterne": 5,
+    "quelle": "Beispiel-Bewertung"
+   },
+   {
+    "id": "bewertung-2",
+    "name": "Thomas R.",
+    "text": "Schneller Termin, sauberer Schnitt, nettes Team. Komme wieder.",
+    "sterne": 5,
+    "quelle": "Beispiel-Bewertung"
+   },
+   {
+    "id": "bewertung-3",
+    "name": "Julia M.",
+    "text": "Meine Balayage ist wunderschön geworden. Die Online-Buchung ist sehr praktisch.",
+    "sterne": 4,
+    "quelle": "Beispiel-Bewertung"
+   }
+  ],
+  "speisekarte": [],
+  "faq": [
+   {
+    "id": "faq-1",
+    "frage": "Brauche ich einen Termin?",
+    "antwort": "Ja, bitte buchen Sie vorab online oder telefonisch. So müssen Sie nicht warten."
+   },
+   {
+    "id": "faq-2",
+    "frage": "Kann ich mit Karte zahlen?",
+    "antwort": "Ja, wir nehmen Bankomat- und Kreditkarte sowie Bargeld."
+   }
+  ],
+  "social": {
+   "facebook": "https://facebook.example/salonmusterfrau",
+   "instagram": "https://instagram.example/salonmusterfrau",
+   "tiktok": "",
+   "youtube": "",
+   "whatsapp": "",
+   "linkedin": "",
+   "google": ""
+  },
+  "recht": {
+   "rechtsform": "einzel",
+   "inhaber": "Maria Musterfrau",
+   "uid": "ATU00000000",
+   "firmenbuchnummer": "",
+   "firmenbuchgericht": "",
+   "kammer": "Wirtschaftskammer Salzburg, Landesinnung der Friseure",
+   "gewerbebehoerde": "Bezirkshauptmannschaft Hallein",
+   "unternehmensgegenstand": "Friseur und Perückenmacher (Stylist)",
+   "berufsbezeichnung": "",
+   "verleihungsstaat": "Österreich",
+   "berufsrecht": "Gewerbeordnung (www.ris.bka.gv.at)",
+   "hoster": "Beispiel-Hosting GmbH, Beispielgasse 2, 5020 Salzburg"
+  },
+  "bilder": [
+   {
+    "id": "bild-start",
+    "name": "beispielfoto-salon",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221600%22%20height%3D%22900%22%20viewBox%3D%220%200%201600%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23a8436a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%233a2430%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%221312%22%20cy%3D%22180%22%20r%3D%22315%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.12%22%2F%3E%3Ccircle%20cx%3D%22192%22%20cy%3D%22810%22%20r%3D%22252.00000000000003%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2282%22%20fill%3D%22%23ffffff%22%3EBeispielfoto%3A%20Salon%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "breite": 1600,
+    "hoehe": 900,
+    "bytes": 1015,
+    "alt": "Heller Friseursalon mit Spiegeln und Stühlen",
+    "bereich": "start"
+   },
+   {
+    "id": "bild-galerie-1",
+    "name": "beispielfoto-balayage",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22900%22%20viewBox%3D%220%200%201200%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23c98b6b%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237a3b52%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22983.9999999999999%22%20cy%3D%22180%22%20r%3D%22315%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.12%22%2F%3E%3Ccircle%20cx%3D%22144%22%20cy%3D%22810%22%20r%3D%22252.00000000000003%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2282%22%20fill%3D%22%23ffffff%22%3EBeispielfoto%3A%20Balayage%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "breite": 1200,
+    "hoehe": 900,
+    "bytes": 1031,
+    "alt": "Langes Haar mit Balayage in Honigtönen",
+    "bereich": "galerie"
+   },
+   {
+    "id": "bild-galerie-2",
+    "name": "beispielfoto-kurzhaarschnitt",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22900%22%20viewBox%3D%220%200%201200%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%237a3b52%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%232b2326%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22983.9999999999999%22%20cy%3D%22180%22%20r%3D%22315%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.12%22%2F%3E%3Ccircle%20cx%3D%22144%22%20cy%3D%22810%22%20r%3D%22252.00000000000003%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2282%22%20fill%3D%22%23ffffff%22%3EBeispielfoto%3A%20Kurzhaarschnitt%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "breite": 1200,
+    "hoehe": 900,
+    "bytes": 1038,
+    "alt": "Moderner Kurzhaarschnitt von der Seite",
+    "bereich": "galerie"
+   },
+   {
+    "id": "bild-galerie-3",
+    "name": "beispielfoto-hochsteckfrisur",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22900%22%20viewBox%3D%220%200%201200%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23d9a08a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23a8436a%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22983.9999999999999%22%20cy%3D%22180%22%20r%3D%22315%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.12%22%2F%3E%3Ccircle%20cx%3D%22144%22%20cy%3D%22810%22%20r%3D%22252.00000000000003%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2282%22%20fill%3D%22%23ffffff%22%3EBeispielfoto%3A%20Hochsteckfrisur%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "breite": 1200,
+    "hoehe": 900,
+    "bytes": 1038,
+    "alt": "Elegante Hochsteckfrisur für eine Hochzeit",
+    "bereich": "galerie"
+   },
+   {
+    "id": "bild-galerie-4",
+    "name": "beispielfoto-arbeitsplatz",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22900%22%20viewBox%3D%220%200%201200%20900%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%235b3a4a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23a8436a%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22983.9999999999999%22%20cy%3D%22180%22%20r%3D%22315%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.12%22%2F%3E%3Ccircle%20cx%3D%22144%22%20cy%3D%22810%22%20r%3D%22252.00000000000003%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2282%22%20fill%3D%22%23ffffff%22%3EBeispielfoto%3A%20Arbeitsplatz%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "breite": 1200,
+    "hoehe": 900,
+    "bytes": 1035,
+    "alt": "Arbeitsplatz mit Scheren, Kämmen und Föhn",
+    "bereich": "galerie"
+   },
+   {
+    "id": "bild-team-1",
+    "name": "maria",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22800%22%20viewBox%3D%220%200%20800%20800%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23a8436a%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23d9a08a%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22656%22%20cy%3D%22160%22%20r%3D%22280%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.12%22%2F%3E%3Ccircle%20cx%3D%2296%22%20cy%3D%22720%22%20r%3D%22224.00000000000003%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2273%22%20fill%3D%22%23ffffff%22%3EMaria%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "breite": 800,
+    "hoehe": 800,
+    "bytes": 993,
+    "alt": "Porträt von Maria Musterfrau",
+    "bereich": "team"
+   },
+   {
+    "id": "bild-team-2",
+    "name": "lena",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22800%22%20viewBox%3D%220%200%20800%20800%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%237a3b52%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23c98b6b%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22url(%23g)%22%2F%3E%3Ccircle%20cx%3D%22656%22%20cy%3D%22160%22%20r%3D%22280%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.12%22%2F%3E%3Ccircle%20cx%3D%2296%22%20cy%3D%22720%22%20r%3D%22224.00000000000003%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2273%22%20fill%3D%22%23ffffff%22%3ELena%3C%2Ftext%3E%3C%2Fsvg%3E",
+    "breite": 800,
+    "hoehe": 800,
+    "bytes": 992,
+    "alt": "Porträt von Lena Beispiel",
+    "bereich": "team"
+   }
+  ],
+  "abschnitte": [
+   {
+    "id": "abschnitt-mwez4l4h2podn",
+    "typ": "hero",
+    "variante": "vollbild",
+    "sichtbar": true,
+    "seite": "start",
+    "titel": "{Firmenname}",
+    "text": "Willkommen bei {Firmenname}. Lehnen Sie sich zurück – wir kümmern uns um Schnitt, Farbe und Pflege, abgestimmt auf Ihren Typ.",
+    "inhalt": {
+     "bildId": "",
+     "knopfText": ""
+    }
+   },
+   {
+    "id": "abschnitt-mwez4l4h3ak6j",
+    "typ": "leistungen",
+    "variante": "preisliste",
+    "sichtbar": true,
+    "seite": "leistungen",
+    "titel": "Leistungen & Preise",
+    "text": "Unsere Preise im Überblick. Der genaue Preis hängt von Haarlänge und Aufwand ab – wir sagen ihn Ihnen vor dem Start.",
+    "inhalt": {}
+   },
+   {
+    "id": "abschnitt-mwez4l4h4pzx3",
+    "typ": "galerie",
+    "variante": "raster",
+    "sichtbar": true,
+    "seite": "start",
+    "titel": "Einblicke",
+    "text": "Ein paar Eindrücke von uns und unserer Arbeit.",
+    "inhalt": {}
+   },
+   {
+    "id": "abschnitt-mwez4l4h58o3l",
+    "typ": "team",
+    "variante": "rund",
+    "sichtbar": true,
+    "seite": "ueber-uns",
+    "titel": "Unser Team",
+    "text": "Die Menschen hinter {Firmenname}.",
+    "inhalt": {}
+   },
+   {
+    "id": "abschnitt-mwez4l4h6flne",
+    "typ": "bewertungen",
+    "variante": "karten",
+    "sichtbar": true,
+    "seite": "start",
+    "titel": "Das sagen unsere Kunden",
+    "text": "Das sagen unsere Kundinnen und Kunden.",
+    "inhalt": {}
+   },
+   {
+    "id": "abschnitt-mwez4l4h7dly6",
+    "typ": "termin",
+    "variante": "banner",
+    "sichtbar": true,
+    "seite": "start",
+    "titel": "Termin vereinbaren",
+    "text": "Buchen Sie Ihren Termin online – rund um die Uhr. Oder rufen Sie uns an unter {Telefon}.",
+    "inhalt": {
+     "knopfText": "Termin online buchen"
+    }
+   },
+   {
+    "id": "abschnitt-mwez4l4h8ez1c",
+    "typ": "oeffnungszeiten",
+    "variante": "kompakt",
+    "sichtbar": true,
+    "seite": "kontakt",
+    "titel": "Öffnungszeiten",
+    "text": "",
+    "inhalt": {}
+   },
+   {
+    "id": "abschnitt-mwez4l4h9vmez",
+    "typ": "karte",
+    "variante": "mit-adresse",
+    "sichtbar": true,
+    "seite": "kontakt",
+    "titel": "So finden Sie uns",
+    "text": "Sie finden uns in {Ort}.",
+    "inhalt": {}
+   },
+   {
+    "id": "abschnitt-mwez4l4ha6cpm",
+    "typ": "kontakt",
+    "variante": "formular-links",
+    "sichtbar": true,
+    "seite": "kontakt",
+    "titel": "Kontakt",
+    "text": "Schreiben Sie uns oder rufen Sie an – wir melden uns so rasch wie möglich bei Ihnen.",
+    "inhalt": {}
+   }
+  ],
+  "design": {
+   "palette": "rose",
+   "eigeneFarben": false,
+   "farben": {
+    "primaer": "#a8436a",
+    "akzent": "#d9a08a",
+    "hintergrund": "#fffaf8",
+    "flaeche": "#f8ece8",
+    "text": "#2b2326"
+   },
+   "schriftpaar": "elegant",
+   "abstand": "luftig",
+   "ecken": "rund",
+   "modus": "hell"
+  },
+  "struktur": {
+   "art": "onepager",
+   "seiten": [
+    {
+     "id": "start",
+     "titel": "Start"
+    },
+    {
+     "id": "leistungen",
+     "titel": "Leistungen"
+    },
+    {
+     "id": "ueber-uns",
+     "titel": "Über uns"
+    },
+    {
+     "id": "kontakt",
+     "titel": "Kontakt"
+    }
+   ]
+  },
+  "seo": {
+   "titel": "Salon Musterfrau – Friseur in Hallein",
+   "beschreibung": "Salon Musterfrau – Ihr Friseur in Hallein. Haarschnitt, Farbe und Balayage. Preise ansehen und Termin online buchen.",
+   "domain": "https://www.salon-musterfrau.example",
+   "ogBildId": "bild-start"
+  },
+  "kontaktformular": {
+   "art": "mailto",
+   "endpoint": ""
+  },
+  "optionen": {
+   "footerHinweis": true
+  }
+ }
+}

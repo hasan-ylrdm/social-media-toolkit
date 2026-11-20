@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social-Media-Betreuungs-Toolkit</title>
+  <link rel="stylesheet" href="css/toolkit.css">
+  <link rel="stylesheet" href="css/toolkit-teile.css">
+  <link rel="stylesheet" href="css/toolkit-ansichten.css">
+</head>
+<body>
+  <!--
+    Social-Media-Betreuungs-Toolkit – Start: einfach diese Datei doppelklicken.
+    Aufbau der Oberfläche:
+      links   Seitenleiste: Kunden-Auswahl und Navigation  → js/ui/app.js
+      rechts  die gewählte Ansicht                         → js/ui/ansicht-*.js
+    Alle Skripte stehen in js/ladeliste.js (NICHT hier einzeln eintragen).
+  -->
+
+  <div class="sm-app">
+    <aside class="sm-seite">
+      <strong class="sm-marke-name">Social-Media-Toolkit</strong>
+      <div class="sm-kundenwahl">
+        <label for="kunden-auswahl">Kunde</label>
+        <select id="kunden-auswahl"></select>
+      </div>
+      <nav id="navigation" class="sm-nav" aria-label="Bereiche"></nav>
+      <div class="sm-seite-fuss">
+        <span id="speicher-status" class="sm-status" role="status"></span>
+        <span id="version" class="sm-version"></span>
+      </div>
+    </aside>
+
+    <main class="sm-haupt">
+      <header class="sm-kopf">
+        <h1 id="ansicht-titel"></h1>
+        <span id="kunde-anzeige" class="sm-kunde-anzeige"></span>
+      </header>
+      <div id="ansicht" class="sm-inhalt"></div>
+    </main>
+  </div>
+
+  <div id="meldungen" class="sm-meldungen" aria-live="polite"></div>
+
+  <noscript><p style="padding:2rem">Das Social-Media-Toolkit braucht JavaScript.</p></noscript>
+
+  <script src="js/ladeliste.js"></script>
+  <script>
+    SM_LADE(['kern', 'konfig', 'grafik', 'dokumente', 'ui'], function () {
+      SM.ui.app.starte();
+    });
+  </script>
+</body>
+</html>

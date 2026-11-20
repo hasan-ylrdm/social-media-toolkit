@@ -1,0 +1,134 @@
+/* =====================================================================
+   toolkit-ansichten.css – Bauteile der einzelnen Ansichten
+   Karten · Kennzahlen · Zeilen/Raster · Kalender · Post-Editor und
+   Vorschau · Tabellen · Reiter
+   ===================================================================== */
+
+/* ---------- Karten, Kästen, Überschriften ---------- */
+.sm-karte { background: #fff; border: 1px solid var(--sm-linie); border-radius: var(--sm-radius); padding: 14px 16px; margin-bottom: 12px; }
+.sm-karte h2 { font-size: 16px; margin: 0 0 10px; }
+.sm-kasten { border: 1px solid var(--sm-linie); border-radius: 6px; padding: 10px 12px; margin-bottom: 10px; background: #fff; }
+.sm-kasten h3 { margin: 0 0 6px; font-size: 15px; }
+.sm-kasten p, .sm-kasten ol { margin: 0 0 6px; }
+.sm-abschnitt-titel { font-size: 17px; margin: 18px 0 10px; }
+.sm-inhalt h3 { font-size: 14px; margin: 14px 0 8px; }
+
+/* ---------- Kennzahl-Karten (Dashboard, Geschäft) ---------- */
+.sm-kennzahlen { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+.sm-kennzahl { background: #fff; border: 1px solid var(--sm-linie); border-radius: var(--sm-radius); padding: 14px 16px; display: grid; }
+.sm-kennzahl b { font-size: 26px; line-height: 1.2; }
+.sm-kennzahl span { color: var(--sm-leise); font-size: 13px; }
+.sm-spalten { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+
+.sm-aufgaben { list-style: none; margin: 0 0 12px; padding: 0; display: grid; gap: 5px; }
+.sm-aufgaben li { display: flex; gap: 8px; align-items: center; justify-content: space-between; padding: 7px 9px; border-radius: 6px; background: var(--sm-flaeche); border-left: 4px solid var(--sm-linie); }
+.sm-aufgaben li.sm-ueberfaellig { border-left-color: var(--sm-gefahr); background: #fdecea; }
+
+/* ---------- Zeilen und Raster für Felder ---------- */
+.sm-zeile { display: flex; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+.sm-zeile > .sm-feld { flex: 1 1 150px; min-width: 0; }
+.sm-zeile > .sm-feld-schmal { flex: 0 1 150px; }
+.sm-zeile-unten { align-items: flex-end; }
+.sm-zeile-unten > .sm-knopf { margin-bottom: 12px; }
+.sm-zeile-mitte { align-items: center; margin-bottom: 8px; }
+.sm-raster-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; align-items: start; }
+.sm-raster-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 12px; }
+.sm-raster-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 12px; }
+input[type="color"] { width: 56px; height: 34px; padding: 2px; border: 1px solid #b9bfcb; border-radius: 6px; background: #fff; cursor: pointer; }
+input[type="range"] { width: 100%; }
+.sm-mehrfach { border: 1px solid var(--sm-linie); border-radius: 6px; padding: 6px 10px 8px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.sm-mehrfach legend { font-weight: 600; font-size: 13px; padding: 0 4px; }
+.sm-haken { display: inline-flex; align-items: center; gap: 6px; }
+.sm-haken input { width: 16px; height: 16px; }
+.sm-knopf-gewaehlt, .sm-knopf-zweit.sm-knopf-gewaehlt { background: var(--sm-akzent); border-color: var(--sm-akzent); color: #fff; }
+.sm-logo-vorschau { max-height: 56px; max-width: 160px; border: 1px solid var(--sm-linie); border-radius: 6px; padding: 4px; background: #fff; }
+.sm-kundenliste { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.sm-zeiten-zeile { display: grid; grid-template-columns: 96px 110px 1fr 1fr 120px 1fr 1fr; gap: 0 10px; align-items: end; border-bottom: 1px solid var(--sm-linie); padding-top: 8px; }
+.sm-zeiten-zeile > strong { align-self: center; }
+.sm-check-zeile { display: grid; grid-template-columns: 1.4fr 150px 1.4fr; gap: 0 12px; align-items: start; border-bottom: 1px solid var(--sm-linie); padding-top: 8px; }
+.sm-textbaustein p, .sm-vorlagen-text { white-space: pre-wrap; }
+
+/* ---------- Reiter (Mein Geschäft) ---------- */
+.sm-reiter { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 14px; border-bottom: 1px solid var(--sm-linie); padding-bottom: 8px; }
+.sm-reiter button { font: inherit; font-weight: 600; border: 0; background: none; color: var(--sm-leise); padding: 7px 12px; border-radius: 6px; cursor: pointer; }
+.sm-reiter button:hover { background: #e9ebf1; }
+.sm-reiter button.sm-reiter-aktiv { background: var(--sm-akzent-hell); color: var(--sm-akzent-dunkel); }
+
+/* ---------- Tabellen ---------- */
+.sm-tabelle { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+.sm-tabelle th, .sm-tabelle td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--sm-linie); vertical-align: middle; }
+.sm-tabelle th { font-size: 12px; color: var(--sm-leise); }
+.sm-tabelle select { min-width: 140px; }
+.sm-summe td { font-weight: 700; border-top: 2px solid var(--sm-text); }
+
+/* ---------- Kalender ---------- */
+.sm-kalender-leiste { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+.sm-kalender-leiste .sm-feld { margin-bottom: 0; }
+.sm-kalender-leiste select { min-width: 260px; }
+.sm-kalender-titel { min-width: 170px; text-align: center; font-size: 16px; }
+.sm-kalender { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; margin-bottom: 10px; }
+.sm-kalender-kopf { font-weight: 700; font-size: 12px; color: var(--sm-leise); padding: 2px 6px; }
+.sm-tag-zelle { background: #fff; border: 1px solid var(--sm-linie); border-radius: 6px; min-height: 104px; padding: 4px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.sm-kalender-woche .sm-tag-zelle { min-height: 340px; }
+.sm-tag-ausserhalb { background: #f0f1f5; opacity: .6; }
+.sm-tag-ferien { background: #fbf8ea; }
+.sm-tag-heute { border: 2px solid var(--sm-akzent); }
+.sm-tag-ziel { outline: 3px dashed var(--sm-akzent); outline-offset: -2px; }
+.sm-tag-kopf { display: flex; justify-content: space-between; align-items: center; }
+.sm-tag-nummer { font-weight: 700; font-size: 13px; padding-left: 3px; }
+.sm-tag-kopf .sm-knopf-mini { min-height: 22px; min-width: 22px; padding: 0 5px; color: var(--sm-leise); }
+.sm-marke { font-size: 11px; line-height: 1.25; padding: 1px 5px; border-radius: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sm-marke-feiertag { background: #fde3e0; color: #8f1d15; font-weight: 700; }
+.sm-marke-anlass { background: #e4eefc; color: #1d4d91; }
+.sm-marke-event { background: #e3f4e8; color: #17603a; font-weight: 700; }
+.sm-marke-ferien { background: #f4ecc2; color: #6b5300; }
+.sm-chip { font: inherit; text-align: left; cursor: grab; display: grid; width: 100%; background: var(--sm-flaeche); border: 1px solid var(--sm-linie); border-left: 5px solid #8a93a6; border-radius: 4px; padding: 3px 6px; min-width: 0; }
+.sm-chip:hover { background: #e9ebf1; }
+.sm-chip-titel { font-size: 12px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sm-chip-info { font-size: 11px; color: var(--sm-leise); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sm-kalender-woche .sm-chip-titel { white-space: normal; }
+.sm-chip-block { display: grid; gap: 2px; }
+.sm-chip-block select { font-size: 12px; padding: 3px 5px; }
+.sm-legende { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-bottom: 10px; font-size: 12px; color: var(--sm-leise); }
+.sm-legende-punkt { display: inline-flex; align-items: center; gap: 5px; }
+.sm-legende-punkt i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+
+/* ---------- Post-Editor ---------- */
+.sm-post { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 16px; align-items: start; }
+.sm-post-rechts { position: sticky; top: 0; }
+.sm-folien-leiste { margin-bottom: 12px; }
+.sm-zaehler-block { display: grid; gap: 6px; font-size: 12px; color: var(--sm-leise); margin-top: 10px; }
+.sm-zaehler-block strong { color: var(--sm-text); }
+.sm-zaehler-block .sm-zu-lang strong { color: var(--sm-gefahr); }
+
+/* Vorschau: nachgebaute Umgebung der Apps */
+.sm-vorschau-spalte { display: grid; gap: 8px; }
+.sm-vorschau-spalte > p { margin: 0; }
+.sm-vs { background: #fff; border: 1px solid var(--sm-linie); border-radius: 10px; overflow: hidden; }
+.sm-vs-canvas { display: block; width: 100%; height: auto; background: #ddd; }
+.sm-vs-kopf { display: flex; align-items: center; gap: 8px; padding: 8px 10px; font-size: 13px; }
+.sm-vs-profil { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; flex: none; display: inline-grid; place-items: center; color: #fff; font-weight: 700; border: 1px solid var(--sm-linie); background: #fff; }
+.sm-vs-aktionen { padding: 6px 10px 0; font-size: 18px; letter-spacing: 2px; }
+.sm-vs-caption { margin: 0; padding: 4px 10px 10px; font-size: 13px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.sm-vs-tags { color: #1d4d91; }
+.sm-vs-punkte { display: flex; justify-content: center; gap: 4px; padding-top: 6px; }
+.sm-vs-punkte i { width: 6px; height: 6px; border-radius: 50%; background: #c5cad6; }
+.sm-vs-punkte i.sm-vs-punkt-aktiv { background: var(--sm-akzent); }
+.sm-vs-story { position: relative; width: 250px; margin: 0 auto; border-radius: 22px; border: 6px solid #171c2b; background: #171c2b; }
+.sm-vs-story .sm-vs-canvas { border-radius: 16px; }
+.sm-vs-story-kopf { position: absolute; top: 10px; left: 10px; right: 10px; display: flex; align-items: center; gap: 6px; color: #fff; font-size: 12px; text-shadow: 0 1px 3px rgba(0, 0, 0, .6); }
+.sm-vs-story-kopf .sm-vs-profil { width: 24px; height: 24px; }
+.sm-vs-google .sm-vs-caption { padding-top: 8px; }
+
+/* ---------- Schmale Fenster ---------- */
+@media (max-width: 1100px) {
+  .sm-post { grid-template-columns: 1fr; }
+  .sm-post-rechts { position: static; max-width: 420px; }
+  .sm-raster-4 { grid-template-columns: repeat(2, 1fr); }
+  .sm-zeiten-zeile { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 860px) {
+  .sm-kennzahlen, .sm-spalten, .sm-raster-2, .sm-raster-3 { grid-template-columns: 1fr; }
+  .sm-check-zeile { grid-template-columns: 1fr; }
+  .sm-tag-zelle { min-height: 70px; }
+}

@@ -1,0 +1,908 @@
+{
+ "art": "social-media-toolkit-kunde",
+ "formatVersion": 1,
+ "werkzeugVersion": "1.0.1",
+ "exportiertAm": "2026-11-14T12:30:35.516Z",
+ "kunde": {
+  "formatVersion": 1,
+  "werkzeugVersion": "1.0.1",
+  "id": "kunde-beispiel-cafe-muster",
+  "erstelltAm": "2026-11-14T12:30:35.509Z",
+  "geaendertAm": "2026-11-14T12:30:35.509Z",
+  "stamm": {
+   "firmenname": "Café Muster",
+   "slogan": "Dein Platz für die kleine Auszeit",
+   "branche": "gastro",
+   "beschreibung": "Kleines Café in der Halleiner Altstadt mit Frühstück, hausgemachten Mehlspeisen und Kaffee aus einer Salzburger Rösterei.",
+   "strasse": "Musterplatz 3",
+   "plz": "5400",
+   "ort": "Hallein",
+   "land": "Österreich",
+   "telefon": "+43 6245 000000",
+   "email": "hallo@cafe-muster.example",
+   "website": "https://www.cafe-muster.example"
+  },
+  "ansprechperson": {
+   "name": "Maria Muster",
+   "telefon": "+43 660 0000000",
+   "email": "maria@cafe-muster.example"
+  },
+  "notizen": "Erfundener Beispielkunde zum Ausprobieren. Fotos schickt Maria montags per WhatsApp.",
+  "oeffnungszeiten": {
+   "hinweis": "Montag Ruhetag",
+   "tage": [
+    {
+     "geschlossen": true,
+     "von": "07:30",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "geschlossen": false,
+     "von": "07:30",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "geschlossen": false,
+     "von": "07:30",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "geschlossen": false,
+     "von": "07:30",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "geschlossen": false,
+     "von": "07:30",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "geschlossen": false,
+     "von": "08:00",
+     "bis": "18:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    },
+    {
+     "geschlossen": false,
+     "von": "08:00",
+     "bis": "14:00",
+     "pause": false,
+     "pauseVon": "12:00",
+     "pauseBis": "13:00"
+    }
+   ]
+  },
+  "leistungen": [
+   {
+    "id": "leistung-1",
+    "name": "Frühstück „Muster\"",
+    "beschreibung": "Gebäck, Butter, Marmelade, weiches Ei, Heißgetränk",
+    "preis": "€ 11,90"
+   },
+   {
+    "id": "leistung-2",
+    "name": "Cappuccino",
+    "beschreibung": "Bohnen aus einer Salzburger Rösterei",
+    "preis": "€ 4,20"
+   },
+   {
+    "id": "leistung-3",
+    "name": "Hausgemachte Torten",
+    "beschreibung": "Täglich wechselnd",
+    "preis": "€ 4,90"
+   },
+   {
+    "id": "leistung-4",
+    "name": "Mittagsteller",
+    "beschreibung": "Dienstag bis Freitag, 11:30–14:00",
+    "preis": "€ 10,50"
+   }
+  ],
+  "marke": {
+   "farben": {
+    "primaer": "#6b3f2a",
+    "akzent": "#e8b04a",
+    "hintergrund": "#fbf6ee",
+    "text": "#2b1d14"
+   },
+   "schriftpaar": "klassisch",
+   "ton": "freundlich",
+   "zielgruppe": "Menschen aus Hallein und Umgebung, die gern gemütlich frühstücken, sich mit Freundinnen auf einen Kaffee treffen oder eine Pause vom Einkaufen brauchen."
+  },
+  "kanaele": {
+   "instagram": {
+    "aktiv": true,
+    "link": "https://instagram.example/cafemuster"
+   },
+   "facebook": {
+    "aktiv": true,
+    "link": "https://facebook.example/cafemuster"
+   },
+   "tiktok": {
+    "aktiv": false,
+    "link": ""
+   },
+   "google": {
+    "aktiv": true,
+    "link": ""
+   }
+  },
+  "paket": {
+   "paketId": "paket-plus",
+   "preis": "",
+   "seit": "2026-09-01"
+  },
+  "bilder": [
+   {
+    "id": "bild-logo",
+    "name": "Logo Café Muster",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%20viewBox%3D%220%200%20400%20400%22%3E%3Ccircle%20cx%3D%22200%22%20cy%3D%22200%22%20r%3D%22190%22%20fill%3D%22%236b3f2a%22%2F%3E%3Cpath%20d%3D%22M120%20170h140v60a70%2070%200%200%201-140%200z%22%20fill%3D%22%23fbf6ee%22%2F%3E%3Cpath%20d%3D%22M260%20185h18a26%2026%200%200%201%200%2052h-22%22%20fill%3D%22none%22%20stroke%3D%22%23fbf6ee%22%20stroke-width%3D%2214%22%2F%3E%3Cpath%20d%3D%22M160%20150c-12-18%2012-24%200-44M200%20150c-12-18%2012-24%200-44M240%20150c-12-18%2012-24%200-44%22%20fill%3D%22none%22%20stroke%3D%22%23e8b04a%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22%2F%3E%3Crect%20x%3D%22110%22%20y%3D%22300%22%20width%3D%22180%22%20height%3D%2212%22%20rx%3D%226%22%20fill%3D%22%23e8b04a%22%2F%3E%3C%2Fsvg%3E",
+    "breite": 400,
+    "hoehe": 400,
+    "bytes": 523,
+    "alt": "Logo Café Muster",
+    "bereich": "logo"
+   },
+   {
+    "id": "bild-kaffee",
+    "name": "Cappuccino von oben auf einem Holztisch",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%221200%22%20viewBox%3D%220%200%201200%201200%22%3E%3Crect%20width%3D%221200%22%20height%3D%221200%22%20fill%3D%22%23c9a27a%22%2F%3E%3Cpath%20d%3D%22M0%20300h1200M0%20620h1200M0%20930h1200%22%20stroke%3D%22%23b58c63%22%20stroke-width%3D%2210%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22600%22%20r%3D%22390%22%20fill%3D%22%23f4ece0%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22600%22%20r%3D%22300%22%20fill%3D%22%23fffaf2%22%2F%3E%3Ccircle%20cx%3D%22600%22%20cy%3D%22600%22%20r%3D%22250%22%20fill%3D%22%238a5a3c%22%2F%3E%3Cpath%20d%3D%22M600%20470c-90%2060-90%20200%200%20260c90-60%2090-200%200-260z%22%20fill%3D%22%23f1dcc3%22%2F%3E%3Cpath%20d%3D%22M600%20520c-45%2035-45%20125%200%20160c45-35%2045-125%200-160z%22%20fill%3D%22%238a5a3c%22%2F%3E%3Crect%20x%3D%22930%22%20y%3D%22560%22%20width%3D%22190%22%20height%3D%2280%22%20rx%3D%2240%22%20fill%3D%22%23fffaf2%22%2F%3E%3C%2Fsvg%3E",
+    "breite": 1200,
+    "hoehe": 1200,
+    "bytes": 596,
+    "alt": "Cappuccino von oben auf einem Holztisch",
+    "bereich": "foto"
+   },
+   {
+    "id": "bild-torte",
+    "name": "Ein Stück Schokoladentorte auf einem Teller",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%221500%22%20viewBox%3D%220%200%201200%201500%22%3E%3Crect%20width%3D%221200%22%20height%3D%221500%22%20fill%3D%22%23f3d9d2%22%2F%3E%3Cellipse%20cx%3D%22600%22%20cy%3D%221050%22%20rx%3D%22470%22%20ry%3D%22130%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpath%20d%3D%22M300%201010L900%201010L900%20620L300%20780z%22%20fill%3D%22%235a3222%22%2F%3E%3Cpath%20d%3D%22M300%20880L900%20760L900%20820L300%20940z%22%20fill%3D%22%23f6e7d3%22%2F%3E%3Cpath%20d%3D%22M300%20780L900%20620L900%20560L300%20720z%22%20fill%3D%22%233b2015%22%2F%3E%3Ccircle%20cx%3D%22640%22%20cy%3D%22560%22%20r%3D%2246%22%20fill%3D%22%23c0392b%22%2F%3E%3Cpath%20d%3D%22M640%20514c10-40%2040-50%2060-50%22%20stroke%3D%22%232f6b3a%22%20stroke-width%3D%2210%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E",
+    "breite": 1200,
+    "hoehe": 1500,
+    "bytes": 524,
+    "alt": "Ein Stück Schokoladentorte auf einem Teller",
+    "bereich": "foto"
+   },
+   {
+    "id": "bild-gastraum",
+    "name": "Heller Gastraum mit Tischen am Fenster",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221600%22%20height%3D%221100%22%20viewBox%3D%220%200%201600%201100%22%3E%3Crect%20width%3D%221600%22%20height%3D%221100%22%20fill%3D%22%23efe6d8%22%2F%3E%3Crect%20x%3D%22120%22%20y%3D%22110%22%20width%3D%22560%22%20height%3D%22460%22%20fill%3D%22%23cfe4ee%22%2F%3E%3Crect%20x%3D%22920%22%20y%3D%22110%22%20width%3D%22560%22%20height%3D%22460%22%20fill%3D%22%23cfe4ee%22%2F%3E%3Cpath%20d%3D%22M400%20110v460M120%20340h560M1200%20110v460M920%20340h560%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%2216%22%2F%3E%3Crect%20y%3D%22760%22%20width%3D%221600%22%20height%3D%22340%22%20fill%3D%22%23b98d62%22%2F%3E%3Cellipse%20cx%3D%22400%22%20cy%3D%22800%22%20rx%3D%22230%22%20ry%3D%2250%22%20fill%3D%22%236b3f2a%22%2F%3E%3Crect%20x%3D%22385%22%20y%3D%22800%22%20width%3D%2230%22%20height%3D%22220%22%20fill%3D%22%234a2b1c%22%2F%3E%3Cellipse%20cx%3D%221200%22%20cy%3D%22800%22%20rx%3D%22230%22%20ry%3D%2250%22%20fill%3D%22%236b3f2a%22%2F%3E%3Crect%20x%3D%221185%22%20y%3D%22800%22%20width%3D%2230%22%20height%3D%22220%22%20fill%3D%22%234a2b1c%22%2F%3E%3Ccircle%20cx%3D%22400%22%20cy%3D%22770%22%20r%3D%2226%22%20fill%3D%22%23ffffff%22%2F%3E%3Ccircle%20cx%3D%221200%22%20cy%3D%22770%22%20r%3D%2226%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpath%20d%3D%22M800%2060v120%22%20stroke%3D%22%234a2b1c%22%20stroke-width%3D%228%22%2F%3E%3Ccircle%20cx%3D%22800%22%20cy%3D%22220%22%20r%3D%2260%22%20fill%3D%22%23e8b04a%22%2F%3E%3C%2Fsvg%3E",
+    "breite": 1600,
+    "hoehe": 1100,
+    "bytes": 875,
+    "alt": "Heller Gastraum mit Tischen am Fenster",
+    "bereich": "foto"
+   },
+   {
+    "id": "bild-team",
+    "name": "Zwei Mitarbeiterinnen hinter der Theke",
+    "dataUrl": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%221200%22%20viewBox%3D%220%200%201200%201200%22%3E%3Crect%20width%3D%221200%22%20height%3D%221200%22%20fill%3D%22%23e6d3bd%22%2F%3E%3Ccircle%20cx%3D%22420%22%20cy%3D%22430%22%20r%3D%22120%22%20fill%3D%22%23f2c9a5%22%2F%3E%3Cpath%20d%3D%22M300%20400a120%20120%200%200%201%20240%200c-60-70-180-70-240%200z%22%20fill%3D%22%234a2b1c%22%2F%3E%3Cpath%20d%3D%22M220%201000c0-260%2090-360%20200-360s200%20100%20200%20360z%22%20fill%3D%22%236b3f2a%22%2F%3E%3Ccircle%20cx%3D%22800%22%20cy%3D%22460%22%20r%3D%22110%22%20fill%3D%22%23e9b88f%22%2F%3E%3Cpath%20d%3D%22M690%20440a110%20110%200%200%201%20220%200c-40-90-180-90-220%200z%22%20fill%3D%22%23b5651d%22%2F%3E%3Cpath%20d%3D%22M610%201000c0-240%2080-330%20190-330s190%2090%20190%20330z%22%20fill%3D%22%23fbf6ee%22%2F%3E%3Crect%20y%3D%22960%22%20width%3D%221200%22%20height%3D%22240%22%20fill%3D%22%238a5a3c%22%2F%3E%3Crect%20y%3D%22940%22%20width%3D%221200%22%20height%3D%2240%22%20fill%3D%22%235a3a26%22%2F%3E%3C%2Fsvg%3E",
+    "breite": 1200,
+    "hoehe": 1200,
+    "bytes": 656,
+    "alt": "Zwei Mitarbeiterinnen hinter der Theke",
+    "bereich": "foto"
+   }
+  ],
+  "onboarding": {
+   "ziele": "Bekannter werden bei Leuten, die neu in Hallein sind. Mehr Gäste unter der Woche am Vormittag.",
+   "zielgruppe": "Frauen und Männer zwischen 25 und 60 aus Hallein, Oberalm und Kuchl. Viele Stammgäste, Mütter am Vormittag, Leute aus den Büros zu Mittag.",
+   "besonderheiten": "Alles hausgemacht, ruhiger Gastgarten im Innenhof, man kennt die Gäste beim Namen.",
+   "angebote": "Frühstück, Torten, Mittagsteller, Kaffee zum Mitnehmen.",
+   "saison": "Gastgarten ab Mai, Advent mit Keksen und Punsch, Betriebsurlaub in der letzten Augustwoche.",
+   "konkurrenz": "Die Bäckerei am Stadtplatz zeigt schöne Bilder aus der Backstube.",
+   "bisher": "Instagram und Facebook gibt es, aber es wird nur alle paar Wochen etwas gepostet.",
+   "dos": "Per Du, herzlich, auch einmal Dialekt. Das Team zeigen.",
+   "donts": "Keine Gäste ohne Erlaubnis zeigen. Keine Rabattschlachten.",
+   "fotos": "Maria schickt Fotos per WhatsApp; einmal im Monat darf ich vormittags vorbeikommen.",
+   "freigabe": "Maria gibt per WhatsApp frei, meist am selben Tag."
+  },
+  "strategie": {
+   "erzeugtAm": "2026-11-14T12:30:35.510Z",
+   "ziele": "Bekannter werden bei Leuten, die neu in Hallein sind. Mehr Gäste unter der Woche am Vormittag.",
+   "saeulen": [
+    {
+     "id": "saeule-mwgdw2ye28fp8",
+     "name": "Speisen & Getränke",
+     "beschreibung": "Gerichte, Mehlspeisen, Getränke – appetitlich fotografiert.",
+     "anteil": 35,
+     "beitragsarten": [
+      "produkt",
+      "neuigkeit"
+     ]
+    },
+    {
+     "id": "saeule-mwgdw2ye3pa8i",
+     "name": "Einblicke",
+     "beschreibung": "Küche, Service, Lieferanten aus der Region.",
+     "anteil": 20,
+     "beitragsarten": [
+      "einblick",
+      "team"
+     ]
+    },
+    {
+     "id": "saeule-mwgdw2ye41dhk",
+     "name": "Angebote & Events",
+     "beschreibung": "Mittagsmenü, Saisonkarte, Veranstaltungen.",
+     "anteil": 20,
+     "beitragsarten": [
+      "angebot",
+      "event",
+      "gewinnspiel"
+     ]
+    },
+    {
+     "id": "saeule-mwgdw2ye57bh3",
+     "name": "Stimmung & Gäste",
+     "beschreibung": "Atmosphäre zeigen, Gäste einbinden.",
+     "anteil": 15,
+     "beitragsarten": [
+      "kundenstimme",
+      "frage",
+      "danke"
+     ]
+    },
+    {
+     "id": "saeule-mwgdw2ye63nxg",
+     "name": "Infos",
+     "beschreibung": "Öffnungszeiten, Ruhetage, Feiertage.",
+     "anteil": 10,
+     "beitragsarten": [
+      "oeffnungszeiten",
+      "saison"
+     ]
+    }
+   ],
+   "postsProMonat": 12,
+   "storiesProWoche": 3,
+   "reelsProMonat": 1,
+   "wochentage": [
+    0,
+    2,
+    4
+   ],
+   "kanalwahl": "Betreut werden: Instagram, Facebook, Google-Unternehmensprofil.\nInstagram für Bilder von Speisen und Stimmung, Facebook für Mittagsmenü und Veranstaltungen, Google für Öffnungszeiten und Bewertungen.",
+   "hinweise": "Zielgruppe: Frauen und Männer zwischen 25 und 60 aus Hallein, Oberalm und Kuchl. Viele Stammgäste, Mütter am Vormittag, Leute aus den Büros zu Mittag.\nDas macht den Betrieb besonders: Alles hausgemacht, ruhiger Gastgarten im Innenhof, man kennt die Gäste beim Namen.\nWichtige Zeiten im Jahr: Gastgarten ab Mai, Advent mit Keksen und Punsch, Betriebsurlaub in der letzten Augustwoche.\nSoll vorkommen: Per Du, herzlich, auch einmal Dialekt. Das Team zeigen.\nSoll nicht vorkommen: Keine Gäste ohne Erlaubnis zeigen. Keine Rabattschlachten."
+  },
+  "events": [
+   {
+    "id": "event-1",
+    "datum": "2026-11-20",
+    "titel": "Kekse-Backen für Kinder im Café"
+   }
+  ],
+  "posts": [
+   {
+    "id": "post-beispiel-1",
+    "datum": "2026-11-02",
+    "uhrzeit": "09:00",
+    "kanaele": [
+     "instagram",
+     "facebook",
+     "google"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "produkt",
+    "saeuleId": "saeule-mwgdw2ye28fp8",
+    "status": "veroeffentlicht",
+    "titel": "Produkt / Leistung · Speisen & Getränke",
+    "caption": "Frisch aus unserer Küche: Frühstück für zwei.\n\nGibt es ab sofort bei uns in Hallein. Wer kommt vorbei?",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "",
+    "folien": [
+     {
+      "id": "folie-beispiel-1",
+      "vorlage": "produkt",
+      "texte": {
+       "titel": "Frühstück für zwei",
+       "untertitel": "Bei Café Muster",
+       "text": "",
+       "zusatz": "€ 19"
+      },
+      "bildId": "bild-kaffee",
+      "bildId2": "bild-torte",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "marke"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-2",
+    "datum": "2026-11-04",
+    "uhrzeit": "17:30",
+    "kanaele": [
+     "instagram",
+     "facebook"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "tipp",
+    "saeuleId": "saeule-mwgdw2ye3pa8i",
+    "status": "veroeffentlicht",
+    "titel": "Karussell: 3 Gründe für ein Frühstück bei uns",
+    "caption": "Drei Gründe, warum sich das Aufstehen lohnt. Welcher ist deiner? Reservieren könnt ihr unter +43 6245 000000.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "",
+    "folien": [
+     {
+      "id": "folie-beispiel-2",
+      "vorlage": "titel-folie",
+      "texte": {
+       "titel": "3 Gründe für ein Frühstück bei uns",
+       "untertitel": "Guten Morgen",
+       "text": "Wischen für mehr",
+       "zusatz": "{Firmenname}"
+      },
+      "bildId": "bild-kaffee",
+      "bildId2": "bild-gastraum",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "hell"
+     },
+     {
+      "id": "folie-beispiel-liste",
+      "vorlage": "liste",
+      "texte": {
+       "titel": "Darum bei uns",
+       "untertitel": "Frühstück",
+       "text": "Alles hausgemacht\nKaffee aus Salzburg\nRuhiger Gastgarten im Innenhof",
+       "zusatz": "{Firmenname}"
+      },
+      "bildId": "",
+      "bildId2": "",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "hell"
+     },
+     {
+      "id": "folie-beispiel-schluss",
+      "vorlage": "angebot",
+      "texte": {
+       "titel": "Frühstück für zwei um € 19",
+       "untertitel": "Bis Sonntag",
+       "text": "Jetzt Tisch reservieren",
+       "zusatz": "{Telefon}"
+      },
+      "bildId": "",
+      "bildId2": "",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "marke"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-3",
+    "datum": "2026-11-06",
+    "uhrzeit": "09:00",
+    "kanaele": [
+     "instagram",
+     "facebook",
+     "google"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "angebot",
+    "saeuleId": "saeule-mwgdw2ye41dhk",
+    "status": "veroeffentlicht",
+    "titel": "Angebot / Aktion · Angebote & Events",
+    "caption": "Frühstück für zwei – nur bis Sonntag bei Café Muster in Hallein.\n\nEinfach vorbeikommen oder anrufen: +43 6245 000000",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "",
+    "folien": [
+     {
+      "id": "folie-beispiel-3",
+      "vorlage": "angebot",
+      "texte": {
+       "titel": "Frühstück für zwei",
+       "untertitel": "Aktion",
+       "text": "Nur für kurze Zeit bei Café Muster",
+       "zusatz": "Gültig bis Sonntag"
+      },
+      "bildId": "bild-gastraum",
+      "bildId2": "bild-team",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "dunkel"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-4",
+    "datum": "2026-11-09",
+    "uhrzeit": "17:30",
+    "kanaele": [
+     "instagram",
+     "facebook"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "kundenstimme",
+    "saeuleId": "saeule-mwgdw2ye57bh3",
+    "status": "geplant",
+    "titel": "Zitat / Kundenstimme · Stimmung & Gäste",
+    "caption": "„Hier fühlt man sich vom ersten Moment an wohl.\"\n\nDanke, Anna, für diese Rückmeldung! Solche Worte freuen das ganze Team von Café Muster.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "",
+    "folien": [
+     {
+      "id": "folie-beispiel-4",
+      "vorlage": "zitat",
+      "texte": {
+       "titel": "",
+       "untertitel": "",
+       "text": "Hier fühlt man sich vom ersten Moment an wohl.",
+       "zusatz": "Anna"
+      },
+      "bildId": "bild-team",
+      "bildId2": "bild-kaffee",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "marke"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-5",
+    "datum": "2026-11-11",
+    "uhrzeit": "09:00",
+    "kanaele": [
+     "instagram",
+     "facebook",
+     "google"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "neuigkeit",
+    "saeuleId": "saeule-mwgdw2ye28fp8",
+    "status": "freigegeben",
+    "titel": "Neuigkeit · Speisen & Getränke · Anlass: Martinstag",
+    "caption": "Es gibt Neuigkeiten! Hausgemachte Mehlspeisen, jeden Tag frisch\n\nFragen dazu? Schreibt uns einfach oder ruft an: +43 6245 000000",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "Anlass am 11.11.2026: Martinstag – Idee: Faschingsbeginn, Ganslzeit",
+    "folien": [
+     {
+      "id": "folie-beispiel-5",
+      "vorlage": "neuigkeit",
+      "texte": {
+       "titel": "Neu bei uns",
+       "untertitel": "Café Muster",
+       "text": "Hausgemachte Mehlspeisen, jeden Tag frisch",
+       "zusatz": ""
+      },
+      "bildId": "bild-kaffee",
+      "bildId2": "bild-torte",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "hell"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-6",
+    "datum": "2026-11-13",
+    "uhrzeit": "17:30",
+    "kanaele": [
+     "instagram",
+     "facebook",
+     "google"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "oeffnungszeiten",
+    "saeuleId": "saeule-mwgdw2ye63nxg",
+    "status": "freigabe",
+    "titel": "Öffnungszeiten / Feiertage · Infos",
+    "caption": "Info für unsere Gäste: Hausgemachte Mehlspeisen, jeden Tag frisch\n\nAn allen anderen Tagen kochen wir wie gewohnt für euch.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "",
+    "folien": [
+     {
+      "id": "folie-beispiel-6",
+      "vorlage": "oeffnungszeiten",
+      "texte": {
+       "titel": "Unsere Öffnungszeiten",
+       "untertitel": "Hausgemachte Mehlspeisen, jeden Tag frisch",
+       "text": "",
+       "zusatz": "Wir freuen uns auf Sie!"
+      },
+      "bildId": "bild-torte",
+      "bildId2": "bild-gastraum",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "dunkel"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-7",
+    "datum": "2026-11-18",
+    "uhrzeit": "09:00",
+    "kanaele": [
+     "instagram",
+     "facebook",
+     "google"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "produkt",
+    "saeuleId": "saeule-mwgdw2ye28fp8",
+    "status": "freigabe",
+    "titel": "Produkt / Leistung · Speisen & Getränke",
+    "caption": "Heute auf der Karte: Frühstück für zwei (€ 19).\n\nTisch reservieren unter +43 6245 000000.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "",
+    "folien": [
+     {
+      "id": "folie-beispiel-7",
+      "vorlage": "produkt",
+      "texte": {
+       "titel": "Frühstück für zwei",
+       "untertitel": "Bei Café Muster",
+       "text": "",
+       "zusatz": "€ 19"
+      },
+      "bildId": "bild-gastraum",
+      "bildId2": "bild-team",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "marke"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-8",
+    "datum": "2026-11-20",
+    "uhrzeit": "17:30",
+    "kanaele": [
+     "instagram",
+     "facebook"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "team",
+    "saeuleId": "saeule-mwgdw2ye3pa8i",
+    "status": "entwurf",
+    "titel": "Team-Vorstellung · Einblicke · Anlass: Kekse-Backen für Kinder im Café",
+    "caption": "Die Menschen hinter Café Muster: Heute stellen wir euch Anna vor.\n\nHausgemachte Mehlspeisen, jeden Tag frisch",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "Anlass am 20.11.2026: Kekse-Backen für Kinder im Café",
+    "folien": [
+     {
+      "id": "folie-beispiel-8",
+      "vorlage": "team",
+      "texte": {
+       "titel": "Anna",
+       "untertitel": "Unser Team",
+       "text": "Hausgemachte Mehlspeisen, jeden Tag frisch",
+       "zusatz": ""
+      },
+      "bildId": "bild-team",
+      "bildId2": "bild-kaffee",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "hell"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-9",
+    "datum": "2026-11-21",
+    "uhrzeit": "09:00",
+    "kanaele": [
+     "instagram",
+     "facebook"
+    ],
+    "format": "reel-cover",
+    "beitragsart": "reel",
+    "saeuleId": "",
+    "status": "entwurf",
+    "titel": "Reel: Latte Art",
+    "caption": "Latte Art 🎬\n\nMehr Einblicke gibt es regelmäßig hier bei Café Muster.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "Hook: Schau genau hin\nSzenen: Espresso läuft | Milch wird gegossen | Fertiges Muster",
+    "folien": [
+     {
+      "id": "folie-beispiel-9",
+      "vorlage": "titel-folie",
+      "texte": {
+       "titel": "Latte Art",
+       "untertitel": "Reel",
+       "text": "",
+       "zusatz": "Café Muster"
+      },
+      "bildId": "bild-kaffee",
+      "bildId2": "bild-torte",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "dunkel"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-10",
+    "datum": "2026-11-23",
+    "uhrzeit": "17:30",
+    "kanaele": [
+     "instagram",
+     "facebook",
+     "google"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "event",
+    "saeuleId": "saeule-mwgdw2ye41dhk",
+    "status": "entwurf",
+    "titel": "Event / Veranstaltung · Angebote & Events",
+    "caption": "Bald ist es so weit: Hausgemachte Mehlspeisen, jeden Tag frisch.\n\n📅 Sonntag\n🕒 9 Uhr\n📍 Musterplatz 3, Hallein\n\nKommt vorbei und bringt gern jemanden mit.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "",
+    "folien": [
+     {
+      "id": "folie-beispiel-10",
+      "vorlage": "event",
+      "texte": {
+       "titel": "Hausgemachte Mehlspeisen, jeden Tag frisch",
+       "untertitel": "Save the Date",
+       "text": "Hallein",
+       "zusatz": "Sonntag"
+      },
+      "bildId": "bild-torte",
+      "bildId2": "bild-gastraum",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "marke"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-11",
+    "datum": "2026-11-25",
+    "uhrzeit": "09:00",
+    "kanaele": [
+     "instagram",
+     "facebook",
+     "google"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "neuigkeit",
+    "saeuleId": "saeule-mwgdw2ye28fp8",
+    "status": "entwurf",
+    "titel": "Neuigkeit · Speisen & Getränke · Anlass: 1. Advent",
+    "caption": "Neu bei Café Muster: Hausgemachte Mehlspeisen, jeden Tag frisch.\n\nSchaut vorbei und überzeugt euch selbst – wir freuen uns auf euren Besuch in Hallein.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "Anlass am 29.11.2026: 1. Advent – Idee: Adventzeit beginnt: Gutscheine, Geschenkideen",
+    "folien": [
+     {
+      "id": "folie-beispiel-11",
+      "vorlage": "neuigkeit",
+      "texte": {
+       "titel": "Neu bei uns",
+       "untertitel": "Café Muster",
+       "text": "Hausgemachte Mehlspeisen, jeden Tag frisch",
+       "zusatz": ""
+      },
+      "bildId": "bild-gastraum",
+      "bildId2": "bild-team",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "hell"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-12",
+    "datum": "2026-11-27",
+    "uhrzeit": "17:30",
+    "kanaele": [
+     "instagram",
+     "facebook"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "frage",
+    "saeuleId": "saeule-mwgdw2ye57bh3",
+    "status": "entwurf",
+    "titel": "Frage an die Community · Stimmung & Gäste · Anlass: Black Friday",
+    "caption": "Eure Meinung ist gefragt: Hausgemachte Mehlspeisen, jeden Tag frisch\n\nA oder B? Wir sind gespannt.",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "Anlass am 27.11.2026: Black Friday – Idee: Nur mitmachen, wenn es zum Betrieb passt",
+    "folien": [
+     {
+      "id": "folie-beispiel-12",
+      "vorlage": "frage",
+      "texte": {
+       "titel": "Hausgemachte Mehlspeisen, jeden Tag frisch",
+       "untertitel": "Eure Meinung",
+       "text": "Schreibt es in die Kommentare",
+       "zusatz": ""
+      },
+      "bildId": "bild-team",
+      "bildId2": "bild-kaffee",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "dunkel"
+     }
+    ]
+   },
+   {
+    "id": "post-beispiel-13",
+    "datum": "2026-11-30",
+    "uhrzeit": "09:00",
+    "kanaele": [
+     "instagram",
+     "facebook"
+    ],
+    "format": "feed-hoch",
+    "beitragsart": "einblick",
+    "saeuleId": "saeule-mwgdw2ye3pa8i",
+    "status": "entwurf",
+    "titel": "Einblick hinter die Kulissen · Einblicke · Anlass: Krampustag",
+    "caption": "Bevor die ersten Gäste kommen: Hausgemachte Mehlspeisen, jeden Tag frisch",
+    "hashtags": "#café #kaffee #frühstück #hallein #tennengau",
+    "notiz": "Anlass am 05.12.2026: Krampustag – Idee: Lokales Brauchtum, Krampuslauf",
+    "folien": [
+     {
+      "id": "folie-beispiel-13",
+      "vorlage": "foto-text",
+      "texte": {
+       "titel": "Hausgemachte Mehlspeisen, jeden Tag frisch",
+       "untertitel": "Einblick",
+       "text": "",
+       "zusatz": ""
+      },
+      "bildId": "bild-kaffee",
+      "bildId2": "bild-torte",
+      "ausschnitt": {
+       "zoom": 1,
+       "x": 50,
+       "y": 50
+      },
+      "textPosition": "unten",
+      "ausrichtung": "links",
+      "farbschema": "marke"
+     }
+    ]
+   }
+  ],
+  "hashtagSets": [
+   {
+    "id": "set-1",
+    "name": "Stammset",
+    "tags": "#cafemuster #hallein #frühstück #mehlspeisen #tennengau"
+   }
+  ],
+  "berichte": [
+   {
+    "id": "bericht-beispiel-1",
+    "monat": "2026-09",
+    "kennzahlen": {
+     "reichweite": 1840,
+     "follower": 412,
+     "interaktionen": 156,
+     "profilaufrufe": 230,
+     "websiteKlicks": 18,
+     "anrufe": 6,
+     "beitraege": 9
+    },
+    "topPosts": [],
+    "einschaetzung": "",
+    "plan": ""
+   },
+   {
+    "id": "bericht-beispiel-2",
+    "monat": "2026-10",
+    "kennzahlen": {
+     "reichweite": 2310,
+     "follower": 438,
+     "interaktionen": 204,
+     "profilaufrufe": 297,
+     "websiteKlicks": 25,
+     "anrufe": 9,
+     "routen": 14,
+     "bewertungen": 2,
+     "beitraege": 12
+    },
+    "topPosts": [
+     {
+      "id": "top-1",
+      "titel": "Reel: Ein Cappuccino entsteht",
+      "wert": "860 erreichte Konten, 74 Likes"
+     },
+     {
+      "id": "top-2",
+      "titel": "Vorstellung von Anna aus dem Service",
+      "wert": "540 erreichte Konten, 61 Likes, 9 Kommentare"
+     },
+     {
+      "id": "top-3",
+      "titel": "Frühstücks-Aktion",
+      "wert": "490 erreichte Konten, 12 gespeichert"
+     }
+    ],
+    "einschaetzung": "BEISPIELZAHLEN zum Ausprobieren. Beiträge mit Menschen aus dem Team kommen am besten an. Reine Angebots-Grafiken werden weniger oft angesehen.",
+    "plan": "Ein weiteres Team-Porträt, ein Reel aus der Backstube und rechtzeitig die Öffnungszeiten für die Feiertage."
+   }
+  ]
+ }
+}

@@ -1,0 +1,107 @@
+/* =====================================================================
+   toolkit.css – Grundlayout des Werkzeugs
+   (Seitenleiste links, Ansicht rechts, Meldungen unten rechts)
+   Allgemeine Bauteile (Buttons, Felder, Gruppen …): toolkit-teile.css
+   Bauteile einzelner Ansichten (Kalender, Post-Editor …): toolkit-ansichten.css
+   Alle Klassen beginnen mit "sm-". Die druckbaren Dokumente haben ihren
+   eigenen Stil in js/dokumente/rahmen.js (Klassen "dok-").
+   ===================================================================== */
+
+:root {
+  --sm-akzent: #3d4ed8;
+  --sm-akzent-dunkel: #2f3cb0;
+  --sm-akzent-hell: #eef0fd;
+  --sm-text: #1b2130;
+  --sm-leise: #5b6475;
+  --sm-linie: #d9dde5;
+  --sm-flaeche: #f4f5f8;
+  --sm-weiss: #ffffff;
+  --sm-leiste: #171c2b;
+  --sm-gefahr: #b3261e;
+  --sm-ok: #1a7f45;
+  --sm-warnung: #9a5b00;
+  --sm-radius: 8px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--sm-text);
+  background: var(--sm-flaeche);
+  overflow: hidden;
+}
+
+:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+
+.sm-versteckt {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+.sm-luecke { flex: 1; }
+
+/* ---------- Zwei Bereiche: Seitenleiste und Ansicht ---------- */
+.sm-app { display: flex; height: 100%; }
+
+.sm-seite {
+  width: 216px; flex: none; background: var(--sm-leiste); color: #fff;
+  display: flex; flex-direction: column; padding: 14px 10px; gap: 12px; overflow-y: auto;
+}
+.sm-marke-name { font-size: 15px; padding: 0 6px; letter-spacing: .01em; }
+.sm-kundenwahl { display: grid; gap: 4px; padding: 0 6px; }
+.sm-kundenwahl label { font-size: 12px; color: #b9c0d0; font-weight: 600; }
+.sm-kundenwahl select {
+  font: inherit; color: #fff; background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .25); border-radius: 6px; padding: 6px 8px; width: 100%;
+}
+.sm-kundenwahl select option { color: var(--sm-text); background: #fff; }
+
+.sm-nav { display: grid; gap: 2px; }
+.sm-nav button {
+  font: inherit; font-weight: 600; text-align: left; color: #d5daE6; background: none;
+  border: 0; border-radius: 6px; padding: 8px 10px; cursor: pointer;
+}
+.sm-nav button:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+.sm-nav button.sm-nav-aktiv { background: var(--sm-akzent); color: #fff; }
+
+.sm-seite-fuss { margin-top: auto; display: grid; gap: 2px; padding: 0 6px; }
+.sm-status { font-size: 12px; color: #b9c0d0; }
+.sm-status-fehler { color: #ffb4a9; font-weight: 700; }
+.sm-version { font-size: 12px; color: #8f98ab; }
+
+.sm-haupt { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.sm-kopf {
+  display: flex; align-items: baseline; gap: 12px; padding: 12px 20px;
+  background: var(--sm-weiss); border-bottom: 1px solid var(--sm-linie); flex: none;
+}
+.sm-kopf h1 { font-size: 19px; margin: 0; }
+.sm-kunde-anzeige { color: var(--sm-leise); font-weight: 600; }
+.sm-inhalt { flex: 1; overflow-y: auto; padding: 16px 20px 60px; }
+
+/* ---------- Meldungen unten rechts ---------- */
+.sm-meldungen {
+  position: fixed; right: 16px; bottom: 16px; z-index: 1000;
+  display: grid; gap: 8px; max-width: 380px;
+}
+.sm-meldung {
+  background: var(--sm-leiste); color: #fff; padding: 10px 14px;
+  border-radius: var(--sm-radius); box-shadow: 0 6px 20px rgba(0, 0, 0, .25);
+  border-left: 5px solid var(--sm-ok);
+}
+.sm-meldung-fehler { border-left-color: #ff6b5e; }
+.sm-meldung-info { border-left-color: #7c8cff; }
+
+/* ---------- Schmale Fenster: Seitenleiste nach oben ---------- */
+@media (max-width: 860px) {
+  body { overflow: auto; }
+  .sm-app { flex-direction: column; height: auto; }
+  .sm-seite { width: 100%; }
+  .sm-nav { grid-template-columns: repeat(3, 1fr); }
+  .sm-inhalt { overflow: visible; }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selbsttest – Social-Media-Toolkit</title>
+  <style>
+    /* Schlichte Darstellung: grün = bestanden, rot = Fehler, grau = übersprungen */
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; background: #f4f5f8; color: #1b2130; line-height: 1.45; }
+    main { max-width: 860px; margin: 0 auto; padding: 24px 16px 60px; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    h2 { font-size: 15px; margin: 22px 0 6px; }
+    .info { color: #5b6475; margin: 0 0 16px; }
+    #summe { font-weight: 700; padding: 14px 16px; border-radius: 8px; background: #e3e6ec; font-size: 17px; }
+    #summe.gut { background: #d9f2e2; color: #0f5a2e; }
+    #summe.schlecht { background: #fde3e0; color: #8f1d15; }
+    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+    li { background: #fff; border-left: 5px solid #b9bfcb; border-radius: 4px; padding: 7px 10px; }
+    li.ok { border-left-color: #1a7f45; }
+    li.fehler { border-left-color: #b3261e; background: #fff4f2; }
+    li.uebersprungen { color: #5b6475; }
+    li small { display: block; color: #8f1d15; font-family: ui-monospace, Consolas, monospace; margin-top: 3px; white-space: pre-wrap; }
+    .marke { font-weight: 700; margin-right: 6px; }
+  </style>
+</head>
+<body>
+  <!--
+    Selbsttest: nach JEDER Änderung am Werkzeug diese Datei im Browser öffnen
+    (Doppelklick). Alles grün = die wichtigsten Funktionen arbeiten noch.
+    Die Tests selbst stehen in tests/tests-*.js.
+  -->
+  <main>
+    <h1>Selbsttest</h1>
+    <p class="info" id="version">Lädt …</p>
+    <p id="summe" role="status">Tests laufen …</p>
+    <div id="ergebnisse"></div>
+  </main>
+
+  <script src="js/ladeliste.js"></script>
+  <script>
+    SM_LADE(['kern', 'konfig', 'grafik', 'dokumente', 'tests'], function () {
+      var bereich = document.getElementById('ergebnisse');
+      var listen = {};   // eine Liste pro Gruppe
+      var SYMBOLE = { ok: '✓ bestanden', fehler: '✗ FEHLER', uebersprungen: '– übersprungen' };
+
+      document.getElementById('version').textContent =
+        'Social-Media-Toolkit ' + SM.VERSION + ' · Datenformat ' + SM.FORMAT_VERSION +
+        ' · ' + SM.grafik.alle().length + ' Grafik-Vorlagen · ' + SM.konfig.branchen.length + ' Branchen · ' +
+        SM.test.faelle.length + ' Tests';
+
+      SM.test.laufe(function (ergebnis) {
+        if (!listen[ergebnis.gruppe]) {
+          var titel = document.createElement('h2');
+          titel.textContent = ergebnis.gruppe;
+          listen[ergebnis.gruppe] = document.createElement('ul');
+          bereich.appendChild(titel);
+          bereich.appendChild(listen[ergebnis.gruppe]);
+        }
+        var zeile = document.createElement('li');
+        zeile.className = ergebnis.status;
+        var marke = document.createElement('span');
+        marke.className = 'marke';
+        marke.textContent = SYMBOLE[ergebnis.status];
+        zeile.appendChild(marke);
+        zeile.appendChild(document.createTextNode(ergebnis.name));
+        if (ergebnis.meldung && ergebnis.status === 'fehler') {
+          var meldung = document.createElement('small');
+          meldung.textContent = ergebnis.meldung;
+          zeile.appendChild(meldung);
+        }
+        listen[ergebnis.gruppe].appendChild(zeile);
+      }).then(function (summe) {
+        var anzeige = document.getElementById('summe');
+        anzeige.className = summe.fehler > 0 ? 'schlecht' : 'gut';
+        anzeige.textContent = summe.fehler > 0
+          ? summe.fehler + ' von ' + (summe.ok + summe.fehler) + ' Tests fehlgeschlagen – bitte die roten Zeilen ansehen.'
+          : 'Alles in Ordnung: ' + summe.ok + ' Tests bestanden' + (summe.uebersprungen ? ', ' + summe.uebersprungen + ' übersprungen' : '') + '.';
+        // Für automatische Prüfungen (z. B. mit Playwright) auslesbar:
+        window.SM_TESTERGEBNIS = summe;
+      });
+    });
+  </script>
+</body>
+</html>
